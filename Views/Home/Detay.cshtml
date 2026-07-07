@@ -1,0 +1,23 @@
+﻿@model Urunler
+
+
+
+
+<table class="table">
+    <tbody>
+        <tr>
+            <td><img src="~/img/@Model.Resim" width="500" height="500" alt="..."> </td>
+
+            <td>
+                <h1 class="card-title">@Model.Urunadi</h1>
+                <br />
+                <h6 class="card-title" style="color:gray"> @Model.Urunfiyati TL</h6>
+                <br />
+                <h6 class="card-title" style="color:gray">@Model.Urundetayi</h6>
+                <br />
+                 <h6 class="card-title" style="color:gray">Stok Durumu: @Model.Stokdurumu</h6>
+
+            </td>
+    </tbody>
+   
+</table>

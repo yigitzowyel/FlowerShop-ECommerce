@@ -1,0 +1,19 @@
+﻿@model List<Urunler>
+
+    <h1>Ürünlerimiz</h1>
+<h6 style="color:gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h6>
+<div class="row">
+@foreach (var item in Model)
+{
+    <div class="col">
+    <div class="card" style="width: 18rem;">
+        <img src="~/img/@item.Resim" width="300" height="300"  alt="..." >
+        <div class="card-body">
+            <h5 class="card-title">@item.Urunfiyati TL</h5>
+            <p class="card-text">@item.Urunadi</p>
+            <a href="Home/Detay/@item.Id" class="btn btn-light" onmouseover="this.style.color='white',this.style.backgroundColor='#328012'" onmouseout="this.style.color='black',this.style.backgroundColor='white'">Detay</a>
+        </div>
+    </div>
+    </div>
+}
+    </div>
